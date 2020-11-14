@@ -73,7 +73,7 @@ console.log(result)
   // 7. Count the number of instances for each of the data items.
   // Hint:  Return an object where the keys are 'car', 'truck', etc. and the values are the count.
   
-  const dataCount = data.reduce((acc, num) => (!acc[num] ? acc[num] = 1 : acc[num]++, acc), {}); console.log(dataCount);
+  const dataCount = data.reduce((acc, vehicle) => (!acc[vehicle] ? acc[vehicle] = 1 : acc[vehicle]++, acc), {}); console.log(dataCount);
   
   const devs = [
     { name: 'Wes', year: 1988 },
@@ -90,7 +90,7 @@ console.log(result)
   // 9. Check if everyone is 19 or older?
   
   const allAges = devs.every(person => (new Date()).getFullYear() - person.year >= 19);
- console.log({});
+ console.log({allAges});
   
   const comments = [
     { text: 'Love this!', id: 523423 },
