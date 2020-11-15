@@ -84,13 +84,15 @@ console.log(result)
   
   // Array.prototype.some()
   // 8. Check if at least one person is 19 or older?
-  const age = devs.some(person => (new Date()).getFullYear() - person.year >= 19);
+  const age = devs.some(person => (2020 - person.year >= 19));
  console.log({age});
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
   
   const allAges = devs.every(person => (new Date()).getFullYear() - person.year >= 19);
  console.log({allAges});
+
+ // !!!!! 8 & 9 either work for this exercise !!!!!
   
   const comments = [
     { text: 'Love this!', id: 523423 },
