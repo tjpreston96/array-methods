@@ -62,7 +62,8 @@ console.log(result)
   // Array.prototype.map()
   // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
   
-  const firstLast = people.map((name) => `${name.split(", ")[1]} ${name.split(", ")}[0]`);
+  const firstLast = people.map((name) => `The person's first name is ${name.split(", ")[1]} and their last name is ${name.split(", ")[0]}`);
+  console.log(firstLast)
   
   const data = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
@@ -85,12 +86,12 @@ console.log(result)
   // Array.prototype.some()
   // 8. Check if at least one person is 19 or older?
   const age = devs.some(person => (2020 - person.year >= 19));
- console.log({age});
+//  console.log({age});
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
   
   const allAges = devs.every(person => (new Date()).getFullYear() - person.year >= 19);
- console.log({allAges});
+//  console.log({allAges});
 
  // !!!!! 8 & 9 either work for this exercise !!!!!
   
@@ -111,4 +112,4 @@ console.log(result)
   // 11. Find the index of the comment with an id of 123523
   
   const index = comments.findIndex(index => index.id === 123523);
-  console.log(index)
+//   console.log(index)
